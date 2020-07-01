@@ -8,12 +8,60 @@
     <title>Mohanen B</title>
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
-    <script src="js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 
+    <script src="js/main.js"></script>
 </head>
 
 <body>
-    Hello world!
+    <header>
+        <h1 class="logo">
+            M<span id="gimmick" class="txt-red">O</span>hanen
+        </h1>
+    </header>
+    <section class="content">
+        <div class="tab-header">
+            <button class="tablink bg-red" onclick="openPage('Home', this)">Home</button>
+            <button class="tablink bg-green bg-trans" onclick="openPage('Experience', this)">Experience</button>
+            <button class="tablink bg-blue bg-trans" onclick="openPage('Resume', this)">Resume</button>
+        </div>
+
+        <div id="Home" class="tabcontent bg-red" style="display: block;">
+            <div class="tabcontent-look bg-white">
+                <div class="about">
+                    <div>
+                        <img class="dp" src="img/mo_bw.jpeg">
+                    </div>
+                    <div>
+                        <p>
+                            I am a computer vision engineer,
+                            in simple terms I try to make computers see the world in a way that humans can.
+                        </p>
+                        <p>
+                            I also have some intresets on Video Games and Science Fictions
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Experience" class="tabcontent bg-green">
+            <div class="tabcontent-look bg-white">
+
+                <h3>Experience</h3>
+                <p>Some Experience this fine day!</p>
+            </div>
+        </div>
+
+        <div id="Resume" class="tabcontent bg-blue">
+            <div class="tabcontent-look bg-white">
+                <h3>Resume</h3>
+                <p>Get in touch, or swing by for a cup of coffee.</p>
+            </div>
+        </div>
+
+    </section>
 </body>
 
 </html>

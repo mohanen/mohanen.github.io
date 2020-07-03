@@ -136,14 +136,32 @@ header h1.logo {
 
 .h-section .work > div,
 .h-section .projects > div {
-    padding: 3rem 2rem 1rem 2rem;
+    /*padding: 3rem 2rem 1rem 2rem;*/
     text-align: center;
     margin: 1rem;
     background-color: white;
     font-weight: bold;    
+    flex-grow: 1;
+}
+
+.h-section .work > div > .padder,
+.h-section .projects > div > .padder{
+    padding: 3rem 2rem 1rem 2rem;
     position: relative;
 }
 
+.h-section .work > div h2,
+.h-section .projects > div h2{
+    margin-bottom: 1rem;
+}
+
+.h-section .work > div h3,
+.h-section .projects > div h3{
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.h-section .work > div p,
 .h-section .projects > div p{
     text-align: left;
 }
@@ -234,23 +252,39 @@ header h1.logo {
     color: white;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /*default*/
+}
 
-@media only screen and (min-width: 768px) {
-
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
     html {
-        font-size: 12pt;
-    }
-    .content {
-        width: 80%;
+        font-size: 10pt;        
     }
 
     .tabcontent .tabcontent-look {
-        padding: 3rem;
+        padding: 1rem;
     }
-
+    
     .h-section .about {
         padding: 2rem;
         margin: 1rem;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+
+    .h-section .work > div,
+    .h-section .projects > div {
+        flex-grow: 0;
+    }
+
+    .h-section .about {
+
         flex-direction: row;
         justify-content: center;
 
@@ -267,6 +301,50 @@ header h1.logo {
 
     .h-section .work > div,
     .h-section .projects > div {
-        width: 40%;
+        width: 46%;
+        margin: 2%;
     }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    html {
+        font-size: 12pt;
+    }
+
+    .content {
+        width: 80%;
+    }
+
+    .tabcontent .tabcontent-look {
+        padding: 3rem;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1600px and up) */
+@media only screen and (min-width: 1600px) {
+    .content {
+        width: 75%;
+    }
+
+} 
+
+
+/* Extra large devices (large desktops, 1920px and up) */
+@media only screen and (min-width: 1920px) {
+
+    .h-section .work > div,
+    .h-section .projects > div {
+        width: 30%;
+        margin: 1.66%;
+    }
+
 }

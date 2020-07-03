@@ -6,6 +6,10 @@ html {
     font-family: 'Comfortaa', cursive;
 }
 
+html {
+    font-size: 8pt;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -27,30 +31,30 @@ header h1.logo {
 }
 
 .content {
-    width: 80%;
+    width: 96%;
     border: 10px;
     padding-bottom: 10rem;
 }
 
-.about {
+.h-section .about {
     display: flex;
-    flex-direction: row;
-    justify-content: start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem 1rem 1rem;
 }
 
-.about img.dp {
+.h-section .about img.dp {
     width: 8rem;
     overflow: hidden;
     border-radius: 10px;
+    margin-bottom: 1rem;
 }
 
-.about>div>p {
+.h-section .about>div>p {
     margin-top: 0.2rem;
     margin-bottom: 1rem;
     font-size: 1.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    /*width: 80%;*/
 }
 
 /* Style tab links */
@@ -97,7 +101,7 @@ header h1.logo {
 }
 
 .tabcontent .tabcontent-look {
-    padding: 3rem;
+    padding: 0.2rem;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-bottom-left-radius: 10px;
@@ -119,11 +123,12 @@ header h1.logo {
     flex-wrap: wrap;
 }
 
-.h-section .about {
-    padding: 2rem;
-    margin: 1rem;
-    border-radius: 10px;
+.h-section .work,
+.h-section .projects
+{
+    justify-content: space-between;
 }
+
 
 .h-section {
     padding-bottom: 3rem;
@@ -132,7 +137,6 @@ header h1.logo {
 .h-section .work > div,
 .h-section .projects > div {
     padding: 3rem 2rem 1rem 2rem;
-    width: 40%;
     text-align: center;
     margin: 1rem;
     background-color: white;
@@ -168,7 +172,6 @@ header h1.logo {
 .h-section .interests > div{
     padding: 1rem 2rem;
     text-align: center;
-    white-space: nowrap;
     margin: 1rem;
     border-radius: 50px;
     background-color: white;
@@ -229,4 +232,41 @@ header h1.logo {
 
 .txt-white {
     color: white;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    html {
+        font-size: 12pt;
+    }
+    .content {
+        width: 80%;
+    }
+
+    .tabcontent .tabcontent-look {
+        padding: 3rem;
+    }
+
+    .h-section .about {
+        padding: 2rem;
+        margin: 1rem;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .h-section .about img.dp {
+        margin-bottom: 0;
+    }
+
+    .h-section .about>div>p {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .h-section .work > div,
+    .h-section .projects > div {
+        width: 40%;
+    }
 }

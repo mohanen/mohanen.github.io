@@ -29,6 +29,7 @@ header h1.logo {
 .content {
     width: 80%;
     border: 10px;
+    padding-bottom: 10rem;
 }
 
 .about {
@@ -49,7 +50,7 @@ header h1.logo {
     font-size: 1.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    width: 80%;
+    /*width: 80%;*/
 }
 
 /* Style tab links */
@@ -111,14 +112,16 @@ header h1.logo {
 .h-section .work,
 .h-section .projects,
 .h-section .skills,
-.h-section .contact-links {
+.h-section .contact-links,
+.h-section .interests {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
 .h-section .about {
-    padding: 1rem 2rem;
+    padding: 2rem;
+    margin: 1rem;
     border-radius: 10px;
 }
 
@@ -128,7 +131,7 @@ header h1.logo {
 
 .h-section .work > div,
 .h-section .projects > div {
-    padding: 1rem 2rem;
+    padding: 3rem 2rem 1rem 2rem;
     width: 40%;
     text-align: center;
     margin: 1rem;
@@ -152,10 +155,17 @@ header h1.logo {
     top: 1rem;
 }
 
+.badge.badge-right {
+    right: 1rem;
+    left: auto;
+}
+
 .h-section .skills > div,
 .h-section > h1,
 .h-section .contact-links > a,
-.h-section .contact > h3{
+.h-section .contact > h3,
+.h-section .interests-header > h3,
+.h-section .interests > div{
     padding: 1rem 2rem;
     text-align: center;
     white-space: nowrap;

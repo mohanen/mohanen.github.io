@@ -44,6 +44,8 @@ header h1.logo {
 }
 
 .about>div>p {
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
     font-size: 1.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -69,7 +71,7 @@ header h1.logo {
     outline: none;
     cursor: pointer;
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     flex-grow: 1;
     border-top: 10px;
     border-top-left-radius: 10px;
@@ -104,6 +106,75 @@ header h1.logo {
 .tablink.bg-trans {
     background-color: transparent;
     color: black;
+}
+
+.h-section .work,
+.h-section .projects,
+.h-section .skills,
+.h-section .contact-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.h-section .about {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.h-section {
+    padding-bottom: 3rem;
+}
+
+.h-section .work > div,
+.h-section .projects > div {
+    padding: 1rem 2rem;
+    width: 40%;
+    text-align: center;
+    margin: 1rem;
+    background-color: white;
+    font-weight: bold;    
+    position: relative;
+}
+
+.h-section .projects > div p{
+    text-align: left;
+}
+
+.badge {
+    border-radius: 50px;
+    padding: 0.4rem 0.8rem;
+    margin: 0.4rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+
+.h-section .skills > div,
+.h-section > h1,
+.h-section .contact-links > a,
+.h-section .contact > h3{
+    padding: 1rem 2rem;
+    text-align: center;
+    white-space: nowrap;
+    margin: 1rem;
+    border-radius: 50px;
+    background-color: white;
+    font-weight: bold;
+}
+
+.h-section .skills > div {
+    font-size: 1rem;
+}
+
+.h-section .contact  {
+    border-radius: 50px;
+}
+
+.rounded {
+    border-radius: 10px;
 }
 
 .bg-grey {
@@ -144,4 +215,8 @@ header h1.logo {
 
 .txt-orange {
     color: #ff5722;
+}
+
+.txt-white {
+    color: white;
 }

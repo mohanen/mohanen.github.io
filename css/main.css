@@ -45,7 +45,8 @@ header h1.logo {
 }
 
 .h-section .about img.dp {
-    width: 8rem;
+    /* width: 8rem; */
+    height: 16rem;
     overflow: hidden;
     border-radius: 10px;
     margin-bottom: 1rem;
@@ -107,6 +108,16 @@ header h1.logo {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
+.tabcontent .tabcontent-look .role {
+    font-size: 1.5rem;
+    line-height: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    list-style: none;
+    margin: 0;
+}
+
 
 .tablink.bg-trans {
     background-color: transparent;
@@ -185,7 +196,7 @@ header h1.logo {
 .h-section .skills > div,
 .h-section > h1,
 .h-section .contact-links > a,
-.h-section .contact > h3,
+.h-section .contact > h1,
 .h-section .interests-header > h3,
 .h-section .interests > div{
     padding: 1rem 2rem;
@@ -200,8 +211,24 @@ header h1.logo {
     font-size: 1rem;
 }
 
+.tabcontent .tabcontent-look .role li::before ,
+.h-section .interests > div::before,
+.h-section .skills > div::before {
+    content: '# ';
+    font-size: inherit;
+    padding-right: 2px;
+    color: #f44336;
+}
+
 .h-section .contact  {
     border-radius: 50px;
+}
+
+.h-section.about-contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .rounded {
@@ -286,7 +313,7 @@ header h1.logo {
     .h-section .about {
 
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
 
     }
 

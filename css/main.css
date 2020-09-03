@@ -42,6 +42,7 @@ header h1.logo {
     justify-content: center;
     align-items: center;
     padding: 2rem 1rem 1rem 1rem;
+    margin-top: 2rem;
 }
 
 .h-section .about img.dp {
@@ -224,6 +225,9 @@ header h1.logo {
     border-radius: 50px;
 }
 
+.h-section .contact-wrap {
+    margin-top: 3rem;
+}
 .h-section.about-contact {
     display: flex;
     flex-direction: row;

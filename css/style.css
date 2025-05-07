@@ -193,34 +193,99 @@ body {
 }
 
 .hero-content {
-    max-width: 900px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
-.hero-section h1 {
-    font-size: var(--font-size-hero);
-    margin-bottom: var(--space-xs);
+.hero-title-section {
+    margin-bottom: 2rem;
 }
 
-.hero-section h2 {
-    font-size: var(--font-size-xl);
-    font-weight: 400;
-    margin-bottom: var(--space-lg);
-    color: var(--color-accent-secondary);
+.hero-title-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
 }
 
-.hero-section p {
-    font-size: var(--font-size-lg);
-    margin-bottom: var(--space-xl);
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+.title-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.title-divider .line {
+    height: 2px;
+    width: 100px;
+    background: var(--gradient-border);
+}
+
+.title-divider i {
+    color: var(--color-accent-primary);
+    font-size: 1.5rem;
+}
+
+.hero-expertise {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.expertise-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--bg-card);
+    border-radius: var(--border-radius-pill);
+    border: 1px solid var(--color-border-light);
+    transition: var(--transition-standard);
+}
+
+.expertise-badge:hover {
+    transform: translateY(-2px);
+    background: var(--bg-card-hover);
+    box-shadow: var(--shadow-accent);
+    border-color: var(--color-border-hover);
+}
+
+.expertise-badge i {
+    color: var(--color-accent-primary);
+    font-size: 1.2rem;
+}
+
+.expertise-badge span {
+    color: var(--color-text-primary);
+    font-weight: 500;
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    color: var(--color-text-primary);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin-bottom: 2rem;
 }
 
 .hero-cta {
     display: flex;
-    gap: var(--space-md);
+    gap: 1rem;
     justify-content: center;
-    margin-top: var(--space-xl);
+    margin-top: 2rem;
 }
 
 .primary-btn, .secondary-btn {

@@ -1,301 +1,384 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Mohanen B</title>
-
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-
-    <script src="js/main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohanen B | Senior Lead Engineer | AI & Computer Vision</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <header>
-        <h1 class="logo">
-            M<span id="gimmick" class="txt-red">O</span>hanen
-        </h1>
-    </header>
-    <section class="content">
-        <div class="tab-header">
-            <button class="tablink bg-red" onclick="openPage('Home', this)">Home</button>
-            <button class="tablink bg-green bg-trans" onclick="openPage('Experience', this)">Experience</button>
-            <!-- <button class="tablink bg-blue bg-trans" onclick="openPage('Resume', this)">Resume</button> -->
-        </div>
+    <div class="background-container">
+        <div class="blueprint-circles"></div>
+        <div class="background-overlay"></div>
+    </div>
 
-        <div id="Home" class="tabcontent bg-red" style="display: block;">
-            <div class="tabcontent-look">
-                <div class="h-section about-contact">
-                    <div class="about rounded bg-white">
-                        <div>
-                            <img class="dp" src="img/mo_bw.jpeg">
+    <aside class="cnn-map">
+        <div class="map-title">Layers</div>
+        <nav>
+            <!-- Updated Map with reordered sections -->
+            <a href="#hero" class="map-node" data-section="hero">Introduction</a>
+            <a href="#experience" class="map-node" data-section="experience">Experience</a>
+            <a href="#projects" class="map-node" data-section="projects">Projects</a>
+            <a href="#skills" class="map-node" data-section="skills">Skills</a>
+            <a href="#education" class="map-node" data-section="education">Education</a>
+            <a href="#contact" class="map-node" data-section="contact">Contact</a>
+        </nav>
+    </aside>
+
+    <main class="content-flow">
+        <!-- Hero Section - Moved and restyled -->
+        <section id="hero" class="cnn-block" data-title="Introduction">
+            <div class="cnn-meta meta-top-left">Filter: Overview</div>
+            <div class="cnn-meta meta-top-right">Layer: Input</div>
+            <div class="block-content hero-content">
+                <h1>Mohanen</h1>
+                <h2>Senior Software Engineer</h2>
+                <p>Passionate about building innovative solutions and exploring new technologies. Specializing in full-stack development, cloud architecture, and AI/ML integration.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="primary-btn">
+                        <i class="fas fa-envelope"></i>
+                        <span>Get in Touch</span>
+                    </a>
+                    <a href="#about" class="secondary-btn">
+                        <i class="fas fa-user"></i>
+                        <span>Learn More</span>
+                    </a>
+                </div>
+            </div>
+            <div class="cnn-meta meta-bottom-left">Params: N/A</div>
+            <div class="cnn-meta meta-bottom-right">Output: Introduction</div>
+        </section>
+
+        <!-- Section 1: Experience (Moved up) -->
+        <section id="experience" class="cnn-block" data-title="Experience">
+            <div class="cnn-meta meta-top-left">Filter: Work History</div>
+            <div class="cnn-meta meta-top-right">Layer: Convolution</div>
+            <div class="block-content">
+                <h2>Professional Experience</h2>
+                <div class="timeline">
+                    <!-- Valeo -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Valeo, Chennai, India</h3>
+                            <span class="date">FEB 2021 - PRESENT</span>
+                            <p><strong>Senior Lead Engineer (AI R&D)</strong></p>
+                            <ul>
+                                <li>Multi-Task BEV Network (2025–Present): Developed and optimized a unified neural network with shared encoder and multiple decoders for parametric lane and object detection; led the implementation of parametric lane detection from scratch and multi-task training strategy.</li>
+                                <li>Lane Detection (2024–2025): Built a point-based lane detection algorithm in Bird's Eye View using surround-view camera projections; implemented core BEV lane detection modules from the ground up.</li>
+                                <li>Multi-Task Learning (2023–2024): Contributed to a multi-task model supporting soiling detection, segmentation, object detection, and more; focused on trailer tracking and emergency vehicle detection decoders.</li>
+                                <li>Targetless Trailer Tracking (2021–2022): Customized a vision + kinematics fusion algorithm with UKF for trailer tracking to meet BMW's ADAS architecture needs.</li>
+                                <li>End of Line Calibration (2021–Present): Engineered feature detection and cost functions for custom target-based camera calibration, minimizing reprojection error without traditional checkerboards.</li>
+                                <li>Motion Tracking Calibration (2021): Maintained and debugged dynamic camera extrinsics estimation using motion vector-based cost optimization for surround-view systems.</li>
+                            </ul>
                         </div>
-                        <ul class="role">
-                            <li>Computer Vision</li>
-                            <li>Image Processing</li>
-                            <li>Algorithms</li>
-                            <li>System Design</li>
-                            <li>Web Development</li>
-                            <li>Tech Savvy</li>
+                    </div>
+
+                    <!-- E-con Systems / VisAi Labs -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>E-con Systems / VisAi Labs, Chennai, India</h3>
+                            <span class="date">MAY 2016 - JAN 2021</span>
+                            <p><strong>Project Engineer</strong></p>
+                            <ul>
+                                <li>Individual Contributor.</li>
+                                <li>Developed algorithms for computer vision applications (stereo depth, calibration, 2D processing, feature detection, 3D reconstruction, noise removal, clustering, measurements).</li>
+                                <li>Developed products from scratch to production, with hands-on experience in system design and development.</li>
+                                <li>Mentored team members and planned tasks for developed products.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> <!-- /.timeline -->
+            </div>
+            <div class="cnn-meta meta-bottom-left">Params: ~1M</div>
+            <div class="cnn-meta meta-bottom-right">Output: Career Path</div>
+        </section>
+
+        <!-- Section 2: Projects -->
+        <section id="projects" class="cnn-block" data-title="Projects">
+            <div class="cnn-meta meta-top-left">Filter: Key Projects</div>
+            <div class="cnn-meta meta-top-right">Layer: Pooling</div>
+            <div class="block-content">
+                <h2>Key Projects</h2>
+                <div class="project-cards-container">
+                    <!-- Project Card: Multi Task BEV Network -->
+                    <div class="project-card">
+                        <h3>Multi Task BEV Network</h3>
+                        <span class="project-source-date">Valeo (Driving Perception Platform) | 2025 - Present</span>
+                        <ul>
+                            <li>Multi-task BEV model for parametric Lane detection and Object detection.</li>
+                            <li>Single encoder, multiple decoders for various tasks.</li>
+                            <li>Created and improved Parametric Lane Detection implementation from scratch and Multi-task training.</li>
                         </ul>
                     </div>
-                    <div class="contact-wrap">
-                        <div class="contact">
-                            <h1 class="bg-white">Get in touch.</h1>
-                        </div> 
-                        <div class="contact-links">
-                            <!-- <a target="_blank" href="https://mohanen.github.io/">Website</a> -->
-                            <a target="_blank" href="https://www.linkedin.com/in/mohanen">Linked In</a>
-                            <a target="_blank" href="https://github.com/mohanen">GitHub</a>
-                        </div>                     
+
+                    <!-- Project Card: Lane Detection -->
+                    <div class="project-card">
+                        <h3>Lane Detection</h3>
+                        <span class="project-source-date">Valeo (Driving Perception R&D) | 2024 - 2025</span>
+                        <ul>
+                            <li>Point-based Birds Eye View Lane Detection.</li>
+                            <li>Projects features from 4 surround-view cameras to BEV grid for lane detection.</li>
+                            <li>Created and improved Point-based Lane Detection implementation from scratch.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Project Card: Multi Task Learning -->
+                    <div class="project-card">
+                        <h3>Multi Task Learning</h3>
+                        <span class="project-source-date">Valeo (BMW, Stellantis) | 2023 - 2024</span>
+                        <ul>
+                            <li>Multi-task model: soiling detection, segmentation, object detection, privacy protection, trailer tracking.</li>
+                            <li>Single encoder, multiple decoders.</li>
+                            <li>Worked on Trailer tracking and Emergency Vehicle detection decoders.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Project Card: Targetless Trailer Tracking -->
+                    <div class="project-card">
+                        <h3>Targetless Trailer Tracking</h3>
+                        <span class="project-source-date">Valeo (GM, BMW) | 2021 - 2022</span>
+                        <ul>
+                            <li>Tracks trailer for ADAS (jackknife prevention, automated parking/reverse).</li>
+                            <li>Vision + kinematics fusion with Unscented Kalman Filter (UKF).</li>
+                            <li>Customized algorithm architecture for BMW requirements.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Project Card: vMeasure -->
+                    <div class="project-card">
+                        <h3>vMeasure - Object Dimensioning Solution</h3>
+                        <span class="project-source-date">Vis-Ai Labs | 2019 - 2020</span>
+                        <p class="project-link"><a href="https://vmeasure.ai/" target="_blank">View Project</a></p>
+                        <ul>
+                            <li>Estimates 3D object dimensions (L, B, H).</li>
+                            <li>Uses stereo cameras for depth -> point clouds -> noise removal -> custom min bounding box.</li>
+                            <li>Developed from scratch; involved in system design, engineering, KPI creation, testing, estimation.</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="h-section">
-                    <h1>Things iam familiar with</h1>
-                    <div class="skills"> 
-                        <div>Computer Vision</div>
-                        <div>Image Processing</div>
-                        <div>Stereo Depth Perception</div>
-                        <div>Camera Calibration</div>
-                        <div>3D Measurements</div>
-                        <div>3D Face Morphable Model</div>
-                        <div>SFM</div>
-                        <div>OpenCV</div>
-                        <div>PCL</div>
-                        <div>Linear Algebra</div>
-                        <div>Calculas</div>
-                        <div>AWS</div>
-                        <div>IoT</div>
-                        <div>Server stack</div>
-                        <div>Front end</div>
-                        <div>DBA</div>
-                        <div>C</div>
-                        <div>C++</div>
-                        <div>CUDA Basics</div>
-                        <div>HTML</div>
-                        <div>Stylesheet</div>
-                        <div>Javascript</div>
-                        <div>Node Js</div>
-                        <div>Python Basics</div>
-                        <div>OOPS</div>
-                        <div>Data Structures</div>
-                        <div>Git</div>
-                        <div>Linux</div>
-                    </div>
+                <!-- Show More Projects Button -->
+                <div class="show-more-container">
+                    <button id="show-more-projects" class="show-more-btn">Show More Projects</button>
                 </div>
 
-                <div class="h-section">
-                    <h1>My Interests are around</h1>
-                    <div class="interests">
-                        <div>Computer Vision</div>
-                        <div>3D Reconstruction</div>
-                        <div>Robotics</div>
-                        <div>Stereo Depth Perception</div>
-                        <div>Computational Photography</div>
-                        <div>Artificial Intelligence</div>
-                        <div>Machine Learning</div>
-                        <div>ADAS</div>
-                        <div>Video Games</div>
-                        <div>Science Fiction</div>
-                    </div>                     
-                </div>
-
-
-            </div>
-        </div>
-
-        <div id="Experience" class="tabcontent bg-green">
-            <div class="tabcontent-look">
-
-                <div class="h-section">
-                    <h1>Work</h1>
-                    <div class="work"> 
-
-                        <div  class="rounded bg-white">
-                            <div class="padder">
-                                <span class="badge bg-green txt-white">2016 - Present</span>
-                                <h2>Project Engineer</h2>
-                                <h3>
-                                    <a href="https://www.e-consystems.com/">e-con Systems</a> | 
-                                    <a href="https://visailabs.com">VisAI Labs</a>
-                                </h3>
-                                <p>Started my work as a node js developer later moved to <strong>computer vision team</strong>, and worked on projects involving stereo depth perception</p>
-                            </div>
-                        </div>
-<!-- 
-                        <div  class="rounded bg-white">
-                            <div class="padder">
-                                <span class="badge bg-green txt-white">2020 - Present</span>
-                                <span class="badge badge-right bg-green txt-white">Part Time</span>
-                                <h2>Co-Founder & CTO</h2>
-                                <h3><a href="https://zingme.live/">ZingMe</a></h3>
-                                <p>Building an one of a kind paid closed room live streaming platform with the people you admire</p>
-                            </div>
-                        </div>
- -->
-                        <div  class="rounded bg-white">
-                            <div class="padder">
-                                <span class="badge bg-green txt-white">2018 - 2020</span>
-                                <span class="badge badge-right bg-green txt-white">Part Time</span>
-                                <h2>Full-stack Developer</h2>
-                                <h3><a href="http://praptisense.com">Praptisense</a></h3>
-                                <p>Helping a friend (Co-founder) out in building cloud part of the Maya Mirror, A Virtual dressing room for the New Era</p>
-                            </div>
-                        </div>
-
+                <!-- Additional projects -->
+                <div class="additional-projects">
+                    <!-- Project Card: End of Line Calibration -->
+                    <div class="project-card">
+                        <h3>End of Line Calibration</h3>
+                        <span class="project-source-date">Valeo (BYD) | 2021 - PRESENT</span>
+                        <ul>
+                            <li>EOL Calibration using custom targets instead of checkerboards.</li>
+                            <li>Finds known feature points and minimizes reprojection error.</li>
+                            <li>Developed feature point detection and cost functions for custom targets.</li>
+                        </ul>
                     </div>
 
-                </div>
-
-                <div class="h-section">
-                    <h1>Projects</h1>
-                    <div class="projects"> 
-
-                        <div  class="rounded bg-white">
-                            <div class="padder">
-                                <span class="badge bg-green txt-white">2020 - Present</span>
-                                <h2><a href="https://zingme.live/">ZingMe</a></h2>
-                                <span class="badge badge-right bg-green txt-white">Part Time</span>
-                                <h3>Paid closed room live streaming platform.</h3>
-                                <p>As a Co-founder and CTO, building an one of a kind paid closed room live streaming platform with the people you admire</p>
-                            </div>
-                        </div>
-
-                        <div  class="rounded bg-white">
-                            <div class="padder">
-                                <span class="badge bg-green txt-white">2020 - Present</span>
-                                <h2><a href="https://visailabs.com/">Conveyor vMeasure</a></h2>
-                                <h3>Dimension solution for Conveyor Systems</h3>
-                                <p>Prototyping a 3d Box Volume Measurement for conveyor / roller blade systems that measures on the go</p>
-                            </div>
-                        </div>
-
-
-                        <div  class="rounded bg-white">
-                            <div class="padder">
-                                <span class="badge bg-green txt-white">2020 - 2020</span>
-                                <h2><a href="https://visailabs.com/">Multicam vMeasure</a></h2>
-                                <h3>Multiple Camera vMeasure Prototype</h3>
-                                <p>Rapidly Prototyped Multiple Camera based 3D Box volume Measurement for using in forklifts and warehouses</p>
-                            </div>
-                        </div>
-
-                        <div  class="rounded bg-white">
-                            <div class="padder">
-                                <span class="badge bg-green txt-white">2019 - 2020</span>
-                                <h2><a href="https://visailabs.com/">vMeasure</a></h2>
-                                <h3>Stereo Based Box Volume Measurement</h3>
-                                <p>Worked in the Creation of 3D Box volume Measurement achieving greater accuracy in low-end camera systems</p>
-                            </div>
-                        </div>
-
-                        <div  class="rounded bg-white">
-                            <div class="padder">
-                                <span class="badge bg-green txt-white">2020 - Present</span>
-                                <span class="badge badge-right bg-green txt-white">Personal</span>
-                                <h2><a href="https://github.com/mohanen/dejavu">Déjà Vu</a></h2>
-                                <h3>An Open source Cheatsheet hobby Project.</h3>
-                                <p>Just a simple cheat sheet to record my learnings in Computer Vision, Inspired from devhints</p>
-                            </div>
-                        </div>
-
-                        <div  class="rounded bg-white">
-                            <div class="padder">
-                                <span class="badge bg-green txt-white">2019 - 2019</span>
-                                <h2>SPADE</h2>
-                                <h3>Stereo Presentation Atacck DEtection</h3>
-                                <p>A simple hackathon project involving stereo camera depth perception abilities and liveliness to detect presentation attacks on facial recognition systems</p>
-                            </div>
-                        </div>
-
-                        <div  class="rounded bg-white">
-                            <div class="padder">
-                                <span class="badge bg-green txt-white">2018 - 2019</span>
-                                <h2><a href="https://www.e-consystems.com/3d-usb-stereo-camera-with-nvidia-accelerated-sdk.asp">TaraXL</a></h2>
-                                <h3>GPU accelerated Stereo Depth Camera Solution</h3>
-                                <p>Worked as a Computer Vision algorithm developer, Created and optimized Stereo Depth perception algorithms</p>
-                            </div>
-                        </div>
-
-                        <div  class="rounded bg-white">
-                            <div class="padder">
-                                <span class="badge bg-green txt-white">2018 - 2020</span>
-                                <span class="badge badge-right bg-green txt-white">Part Time</span>
-                                <h2><a href="http://praptisense.com/mayamirror.html">Maya Mirror</a></h2>
-                                <h3>A Virtual dressing room for the New Era.</h3>
-                                <p>Helping a friend (Co-founder) out in building cloud part of the Maya Mirror, A Virtual dressing room for the New Era</p>
-                            </div>
-                        </div>
-
-                        <div  class="rounded bg-white">
-                            <div class="padder">
-                                <span class="badge bg-green txt-white">2018 - 2018</span>
-                                <h2><a href="https://www.e-consystems.com/OTA-software-linux-android-embedded-devices.asp">Health Monitor</a></h2>
-                                <h3>Seamless Linux  & Android System Monitoring</h3>
-                                <p>Worked as a full stack developer, Managed server-side, client-side, database management, security</p>
-                            </div>
-                        </div>
-
-                        <div  class="rounded bg-white">
-                            <div class="padder">
-                                <span class="badge bg-green txt-white">2017 - 2018</span>
-                                <h2><a href="https://www.e-consystems.com/OTA-software-linux-android-embedded-devices.asp">eSOMgears</a></h2>
-                                <h3>Seamless Linux  & Android OTA Solution</h3>
-                                <p>Worked as a full stack developer, Independently Owned and took care of server-side, client-side, database management, security</p>
-                            </div>
-                        </div>
-
-                        <div  class="rounded bg-white">
-                            <div class="padder">
-                                <span class="badge bg-green txt-white">2017 - 2017</span>
-                                <h2>eRDA</h2>
-                                <h3>Remote desktop for our in-house SOM chips</h3>
-                                <p>Worked as a Front developer, Prototyped the entire remote desktop solution</p>
-                            </div>
-                        </div>
-
-                        <div  class="rounded bg-white">
-                            <div class="padder">
-                                <span class="badge bg-green txt-white">2016 - 2017</span>
-                                <h2>Bake House</h2>
-                                <h3>Linux Cloud Build Solution</h3>
-                                <p>Worked as a Front developer, Independently Owned and designed UX/UI of the entire Cloud build Solution from scratch</p>
-                            </div>
-                        </div>
-
-                        <div  class="rounded bg-white">
-                            <div class="padder">
-                                <span class="badge bg-green txt-white">2016 - 2016</span>
-                                <h2><a href="https://www.reinke.com/">Capek</a></h2>
-                                <h3>Agriculture Automation System</h3>
-                                <p>Worked as a Qt developer in developing new UI/UX for the next version of the product during its initial development.</p>
-                            </div>
-                        </div>
-
+                    <!-- Project Card: Motion Tracking Calibration -->
+                    <div class="project-card">
+                        <h3>Motion Tracking Calibration</h3>
+                        <span class="project-source-date">Valeo (GM, FORD, BMW) | 2021</span>
+                        <ul>
+                            <li>Dynamically estimates surround-view camera extrinsics while vehicle is moving.</li>
+                            <li>Block-based motion tracking and cost function using motion vectors.</li>
+                            <li>Maintained algorithm and implemented bug fixes.</li>
+                        </ul>
                     </div>
 
+                    <!-- Project Card: Stereo Presentation Attack Detection -->
+                    <div class="project-card">
+                        <h3>Stereo Presentation Attack Detection</h3>
+                        <span class="project-source-date">Vis-Ai Labs (Fujitsu) | 2019</span>
+                        <ul>
+                            <li>Spoof detection system for ATM face authentication (Spain/Fujitsu).</li>
+                            <li>Uses stereo camera depth to detect human face presence vs. spoofs (photos, tablets).</li>
+                            <li>Prototyped VGG16 model using depth features, securing the project.</li>
+                        </ul>
+                    </div>
 
-                </div>
+                    <!-- Project Card: TaraXL -->
+                    <div class="project-card">
+                        <h3>TaraXL - Stereo Camera</h3>
+                        <span class="project-source-date">Vis-Ai Labs | 2018 - 2019</span>
+                        <p class="project-link"><a href="https://www.e-consystems.com/3d-usb-stereo-camera-with-nvidia-accelerated-sdk.asp" target="_blank">View Project</a></p>
+                        <ul>
+                            <li>Outputs depth map along with image.</li>
+                            <li>Uses pixel disparity and triangulation for depth.</li>
+                            <li>Developed Semi-Global Matching (SGM) algorithm from scratch; optimized with CUDA for Jetson Nano.</li>
+                        </ul>
+                    </div>
 
-            </div>
-        </div>
+                    <!-- Project Card: EsomGears -->
+                    <div class="project-card">
+                        <h3>EsomGears & Health Monitor</h3>
+                        <span class="project-source-date">Vis-Ai Labs | 2016 - 2018</span>
+                        <p class="project-link"><a href="https://www.e-consystems.com/OTA-software-linux-android-embedded-devices.asp" target="_blank">View Project</a></p>
+                        <ul>
+                            <li>OTA and device stat monitoring for Linux/Android.</li>
+                            <li>Uses Ostree (Linux) / native interfaces (Android) for OTA; MQTT to AWS IoT Hub for stats.</li>
+                            <li>Developed cloud-side from scratch; worked on device monitoring daemon service.</li>
+                        </ul>
+                    </div>
 
-        <div id="Resume" class="tabcontent bg-blue">
-            <div class="tabcontent-look">
-                <div class="h-section">
-                    <div class="contact bg-white">
-                        <h3>Get in touch, or swing by for a cup of coffee.</h3>                        
-                    </div> 
+                    <!-- Project Card: Déjà Vu (Personal) -->
+                    <div class="project-card">
+                        <h3>Personal Project: Déjà Vu</h3>
+                        <span class="project-source-date">2020 - Present</span>
+                        <p class="project-link"><a href="https://github.com/mohanen/dejavu" target="_blank">View Project</a></p>
+                        <p>An open-source cheatsheet project to document learnings in Computer Vision.</p>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="cnn-meta meta-bottom-left">Params: ~2M</div>
+            <div class="cnn-meta meta-bottom-right">Output: Project Showcase</div>
+        </section>
 
-    </section>
+        <!-- Section 3: Skills (Separated from About) -->
+        <section id="skills" class="cnn-block" data-title="Skills">
+            <div class="cnn-meta meta-top-left">Filter: Capabilities</div>
+            <div class="cnn-meta meta-top-right">Layer: Activation</div>
+            <div class="block-content">
+                <h2>Technical Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Core Technical</h3>
+                        <div class="skill-tags">
+                            <span><i class="fas fa-eye"></i> Computer Vision</span>
+                            <span><i class="fas fa-brain"></i> Deep Learning</span>
+                            <span><i class="fas fa-network-wired"></i> DNN</span>
+                            <span><i class="fas fa-robot"></i> Machine Learning</span>
+                            <span><i class="fas fa-image"></i> Image Processing</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Programming & Tools</h3>
+                        <div class="skill-tags">
+                            <span><i class="fab fa-cpp"></i> C++</span>
+                            <span><i class="fab fa-python"></i> Python</span>
+                            <span><i class="fas fa-microchip"></i> CUDA</span>
+                            <span><i class="fab fa-js"></i> JavaScript</span>
+                            <span><i class="fas fa-code"></i> OpenCV</span>
+                            <span><i class="fas fa-cube"></i> PCL</span>
+                            <span><i class="fas fa-fire"></i> PyTorch</span>
+                            <span><i class="fas fa-bolt"></i> PyTorch-Lightning</span>
+                            <span><i class="fas fa-layer-group"></i> Keras</span>
+                            <span><i class="fas fa-project-diagram"></i> TensorFlow</span>
+                            <span><i class="fab fa-git-alt"></i> Git</span>
+                            <span><i class="fab fa-linux"></i> Linux</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>General</h3>
+                        <div class="skill-tags">
+                            <span><i class="fas fa-code-branch"></i> Algorithm Design</span>
+                            <span><i class="fas fa-sitemap"></i> System Design</span>
+                            <span><i class="fas fa-puzzle-piece"></i> Problem Solving</span>
+                            <span><i class="fas fa-book-reader"></i> Self Learning</span>
+                            <span><i class="fas fa-users"></i> Team Player</span>
+                            <span><i class="fas fa-lightbulb"></i> Innovative</span>
+                            <span><i class="fas fa-search"></i> Curious</span>
+                            <span><i class="fas fa-rocket"></i> Motivated</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3>Awards & Recognition</h3>
+                <div class="awards-container">
+                    <div class="award-card">
+                        <span class="award-name"><i class="fas fa-trophy"></i> Innovation Award</span>
+                        <span class="award-details">Valeo (2022)</span>
+                    </div>
+                    <div class="award-card">
+                        <span class="award-name"><i class="fas fa-medal"></i> High Flyer Award (4)</span>
+                        <span class="award-details">Valeo (2021-2023)</span>
+                    </div>
+                    <div class="award-card">
+                        <span class="award-name"><i class="fas fa-star"></i> Employee Of the Month (6)</span>
+                        <span class="award-details">Valeo (2021-2024)</span>
+                    </div>
+                    <div class="award-card">
+                        <span class="award-name"><i class="fas fa-award"></i> Emerging Engineer Award</span>
+                        <span class="award-details">E-con Systems (2019)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cnn-meta meta-bottom-left">Params: ~500K</div>
+            <div class="cnn-meta meta-bottom-right">Output: Skill Matrix</div>
+        </section>
+
+        <!-- Section 4: Education (Moved Down) -->
+        <section id="education" class="cnn-block" data-title="Education">
+            <div class="cnn-meta meta-top-left">Filter: Academic</div>
+            <div class="cnn-meta meta-top-right">Layer: Normalization</div>
+            <div class="block-content">
+                <h2>Education</h2>
+                <div class="education-container">
+                    <div class="education-card">
+                        <div class="education-header">
+                            <span class="degree">M.Tech Artificial Intelligence & Machine Learning (Deep Learning Specialization)</span>
+                            <span class="cgpa">8.2 CGPA</span>
+                        </div>
+                        <div class="education-details">
+                            <span class="institution">BITS Pilani, WILP, India</span>
+                            <span class="dates">2022 - 2025</span>
+                        </div>
+                    </div>
+                    <div class="education-card">
+                        <div class="education-header">
+                            <span class="degree">BE Computer Science & Engineering</span>
+                            <span class="cgpa">7.6 CGPA</span>
+                        </div>
+                        <div class="education-details">
+                            <span class="institution">PERI IT, Chennai, India</span>
+                            <span class="dates">2012 - 2016</span>
+                        </div>
+                    </div>
+                    <div class="education-card">
+                        <div class="education-header">
+                            <span class="degree">HSC Computer Science</span>
+                            <span class="cgpa">88%</span>
+                        </div>
+                        <div class="education-details">
+                            <span class="institution">Jaigopal Garodia National, Chennai, India</span>
+                            <span class="dates">2010 - 2012</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cnn-meta meta-bottom-left">Params: ~100K</div>
+            <div class="cnn-meta meta-bottom-right">Output: Educational Background</div>
+        </section>
+
+        <!-- Section 5: Contact -->
+        <section id="contact" class="cnn-block" data-title="Contact">
+            <div class="cnn-meta meta-top-left">FC: 1000 Units</div>
+            <div class="cnn-meta meta-top-right">Layer: FullyConnected</div>
+            <div class="block-content">
+                <h2>Get In Touch</h2>
+                <p>Feel free to reach out via email or connect with me on social platforms.</p>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/mohanen" target="_blank" class="contact-link-btn">
+                        <i class="fab fa-linkedin contact-icon"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/mohanen" target="_blank" class="contact-link-btn">
+                        <i class="fab fa-github contact-icon"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+            <div class="cnn-meta meta-bottom-left">Params: ~5M</div>
+            <div class="cnn-meta meta-bottom-right">Output: 1000</div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
 </body>
-
-</html>
+</html> 

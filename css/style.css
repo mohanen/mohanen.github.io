@@ -530,6 +530,8 @@ body {
     --mouse-rotate-x: 0deg;
     --mouse-rotate-y: 0deg;
     background: transparent;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 /* Adjustments for mouse-based 3D effect - applies to .content-flow */

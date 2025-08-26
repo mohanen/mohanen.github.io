@@ -207,6 +207,7 @@ body {
     font-size: clamp(2rem, 5vw, 3.5rem);
     margin-bottom: 1rem;
     background: var(--gradient-primary);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
@@ -1739,3 +1740,128 @@ button:hover ~ .cursor-outline,
         cursor: auto !important;
     }
 } 
+
+/* Mobile-first improvements for card/grid layouts */
+@media (max-width: 900px) {
+    /* Force single-column for all card grids */
+    .project-cards-container,
+    .additional-projects,
+    .skills-container,
+    .education-container,
+    .awards-container,
+    .contact-links {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+
+    /* So cards feel roomier and readable */
+    .project-card,
+    .skill-category,
+    .education-card,
+    .award-card,
+    .contact-link-btn {
+        padding: var(--space-md);
+    }
+
+    /* Reduce section padding on smaller screens */
+    .block-content {
+        padding: var(--space-lg);
+    }
+
+    /* Slightly reduce page side padding */
+    .content-flow {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Tighten spacing more on extra-small screens */
+    .project-cards-container,
+    .additional-projects,
+    .skills-container,
+    .education-container,
+    .awards-container,
+    .contact-links {
+        gap: var(--space-lg);
+    }
+
+    .block-content {
+        padding: var(--space-md);
+    }
+
+    .project-card {
+        padding: var(--space-md);
+    }
+}
+
+/* Clean, decluttered mobile layout */
+@media (max-width: 900px) {
+    /* More breathing room between cards */
+    .project-cards-container,
+    .additional-projects,
+    .skills-container,
+    .education-container,
+    .awards-container,
+    .contact-links {
+        gap: var(--space-xl);
+    }
+
+    /* Side padding for the page */
+    .content-flow {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    /* Hide decorative meta labels */
+    .cnn-meta {
+        display: none;
+    }
+
+    /* Simplify lists: remove leading arrows and extra indent */
+    .block-content li,
+    .project-card li,
+    .timeline-content li {
+        padding-left: 0;
+    }
+    .block-content li::before,
+    .project-card li::before,
+    .timeline-content li::before {
+        display: none;
+        content: none;
+    }
+
+    /* Timeline: remove spine and markers for a cleaner single-column look */
+    .timeline::before,
+    .timeline-marker {
+        display: none;
+    }
+    .timeline-item {
+        padding-left: 0;
+    }
+    .timeline-content {
+        padding: var(--space-lg);
+    }
+
+    /* Reduce background noise */
+    .blueprint-circles { display: none; }
+    .background-container::before { opacity: 0.3; }
+    .background-container::after { opacity: 0.2; }
+}
+
+@media (max-width: 480px) {
+    /* Slightly larger side padding for very small displays */
+    .content-flow {
+        padding-left: 1.25em;
+        padding-right: 1.25em;
+    }
+
+    /* Typography tweaks for readability */
+    .hero-content p {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+    .cnn-block h2 {
+        font-size: 1.5rem;
+    }
+}
